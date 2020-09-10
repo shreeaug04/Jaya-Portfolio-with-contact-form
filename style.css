@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family:cursive, Helvetica, Arial, sans-serif;
+  
+}
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+main h3 {
+  font-size: 22px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+main p {
+ font-family: Times New Roman,'Montserrat', sans-serif;
+ line-height: 1.5em;
+ margin-bottom: 0em;
+}
+
+/* Header */
+
+header {
+  background-color: #6b655b;
+  margin-bottom: 40px;
+  display: block;
+}
+
+header h1 {
+  color: #eff0e5;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 56px;
+}
+
+ul, ol, p {
+  color: black;
+  font-size: 18px;
+  font-family: Times New Roman,'Montserrat', sans-serif;
+
+}
+/*  Main */
+
+main  .wrapper  h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 24px;
+  color: #6b655b;
+}
+.contact-image {
+  border: 1px solid #ababab;
+  border-radius: 8px;
+}
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* ARTICLE SECTIONS */
+
+#home, #portfolio, #contact {
+  margin-bottom: 120px;
+  section {
+    padding: 0 10%;
+  }
+}
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+/* ABOUT ARTICLE */
+
+#about {
+  background-color: #c5c0b8;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
